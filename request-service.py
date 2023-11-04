@@ -10,6 +10,7 @@ from urllib3 import Retry
 hook = Callable[[Request | Response, Any, Any], Any]
 
 
+
 def merge_dicts(*dicts) -> dict[str, list[hook] | None]:
     merged_dict = {}
     for d in dicts:
