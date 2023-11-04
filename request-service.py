@@ -1,4 +1,4 @@
-from typing import Any, Callable, Optional, Any
+from typing import Any, Callable, Optional
 
 import requests
 from requests import Request, Response
