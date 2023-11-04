@@ -1,4 +1,4 @@
-from typing import Any, Callable, Optional
+from typing import Any, Callable, Optional, Any
 
 import requests
 from requests import Request, Response
@@ -8,7 +8,6 @@ from requests.exceptions import RetryError
 from urllib3 import Retry
 
 hook = Callable[[Request | Response, Any, Any], Any]
-
 
 
 def merge_dicts(*dicts) -> dict[str, list[hook] | None]:
